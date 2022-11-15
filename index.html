@@ -87,7 +87,64 @@
         </button>
         <div class="collapse navbar-collapse flex-grow-0" id="headerMenu">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0 text-uppercase fw-semibold">
+            <!-- Mobile only nav items -->
+            <div class="nav-item d-lg-none"><a class="nav-link  link-dark text-uppercase  dropdown-toggle" href="#"
+                id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">LA CMR</a>
+              <ul class="dropdown-menu rounded-0 rounded-bottom" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Présentation</a></li>
+                <li><a class="dropdown-item" href="#">Gouvernance</a></li>
+                <li><a class="dropdown-item" href="#">Textes juridiques</a></li>
+                <li><a class="dropdown-item" href="#">CMR en chiffres</a></li>
+                <li><a class="dropdown-item" href="#">Actualités</a></li>
+              </ul>
+            </div>
 
+            <div class="nav-item d-lg-none"><a class="nav-link  link-dark text-uppercase dropdown-toggle" href="#"
+                id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">DOCUMENTATION</a>
+              <ul class="dropdown-menu rounded-0 rounded-bottom" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Rapports d'activités</a></li>
+                <li><a class="dropdown-item" href="#">Guides</a></li>
+                <li><a class="dropdown-item" href="#">Brochures</a></li>
+                <li><a class="dropdown-item" href="#">Lexique</a></li>
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="nav-item d-lg-none"><a class="nav-link  link-dark text-uppercase dropdown-toggle" href="#"
+                id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Langue</a>
+              <ul class="dropdown-menu rounded-0 rounded-bottom" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Français</a></li>
+                <li><a class="dropdown-item" href="#">عربي</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </div>
+            <div class="nav-item d-lg-none"><a class="nav-link  link-dark text-uppercase dropdown-toggle" href="#"
+                id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accès
+                Utilisateur</a>
+              <div class="dropdown-menu rounded-0 rounded-bottom p-2" aria-labelledby="navbarDarkDropdownMenuLink">
+                <div class="log-in">
+                  <form action="login">
+                    <div class="form-group my-2">
+                      <input type="text" placeholder="Nom d'Utilisateur" name="username" id=""
+                        class="form-control form-control-sm">
+                    </div>
+                    <div class="form-group my-2">
+                      <input type="password" placeholder="Mot de passe" name="password" id=""
+                        class="form-control form-control-sm">
+                      <small class="form-text text-xs text-end" style="font-size: 12px;"><a href="">Mot de passe oublié
+                          ?</a></small>
+                    </div>
+                    <div class="form-group my-2">
+                      <button type="submit" class="btn btn-sm btn-primary rounded-0">Connexion</button>
+                      <small class="form-text text-xs text-end" style="font-size: 12px;">ou <a href="">Inscrivez
+                          vous</a></small>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+            <!-- end mobile only -->
             <li class="nav-item dropdown hover-underline">
               <a class="nav-link link-dark w-100 dropdown-toggle" data-bs-toggle="dropdown" id="headerDropdown"
                 href="#"><span class="">E-SERVICES</span></a>
@@ -174,8 +231,13 @@
                 </div>
               </div>
               <div class="card-footer">
-                <input type="text" name="bot-msg" id="botMsg"
-                  class="form-control bg-transparent rounded-0 border-0 border-bottom">
+                <div class="input-group mb-3">
+                  <input type="text" name="" id="botMsg"
+                    class="form-control bg-transparent rounded-0 border-0 border-bottom"> <span
+                    class="input-group-text bg-transparent rounded-0 border-0 border-bottom">
+                    <i class="fa-solid fa-paper-plane"></i></span>
+                </div>
+
               </div>
             </div>
           </div>
