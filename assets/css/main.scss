@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import ".././../node_modules/bootstrap/scss/bootstrap.scss";
+// custom vars
+// colors
+$primary:#046DB2;
+$secondary: #303436;
+$white:    #fff;
+$warning: #fd7e14;
+$gray-100: #eeeeef;
+$gray-200: #d3d3d4;
+$gray-300: #b9b9b9;
+$gray-400: #9e9e9f;
+$gray-500: #848484;
+$gray-600: #69696a;
+$gray-700: #4f4f4f;
+$gray-800: #343435;
+$gray-900: #1a1a1a;
+$black:    #000;
+// typography
+$font-family-sans-serif: 'Inter','Montserrat','Arial','Helvetica', sans-serif;
+
+
+// custom css
+.navbar-dark a:hover {
+  text-decoration: underline;
+}
+.hover-underline {
+  position: relative;
+  color: #046DB2;
+}
+
+.hover-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -28px;
+  left: 0;
+  background-color: #046DB2;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline:hover {
+  background-color: $light;
+}
+.hover-underline.active {
+  background-color: $light;
+}
+.hover-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.parallax {
+  background-image: url('/assets/img/banner-cmr-2.png');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bot-icon {
+  background-color: #046DB2;
+  background-image: url('/assets/img/bot-icon.png');
+  background-position: center;
+  background-size: contain;
+  padding: 24px;
+  margin-right: 10px;
+}
+.quick-card {
+  height: 12rem;
+  max-width: 18rem;
+  cursor: pointer;
+}
+.quick-card:hover {
+  background-color: #343435!important;
+}
+.quick-card img{
+  width: 187px;
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  transform: translate(50%,50%);
+  z-index: 0;
+}
+.quick-card h4 {
+  z-index: 2;
+}
+.news-section {
+  background-image: url("/assets/img/news-banner.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 350px;
+}
+.news-tabs {
+  border-bottom-width: 5px;
+  border-color: #b9b9b9;
+}
+.news-tab-toggle {
+  color: #fff!important;
+
+}
+.news-tab-toggle.active {
+  border-bottom: 5px solid white!important;
+  margin-bottom: -5px;
+}
+// media  queries
+@media (max-width: 991.98px) { 
+  .hover-underline:after {
+    bottom: 0px;
+  }
+}
